@@ -17,7 +17,7 @@ Students will create their own portfolio page/site and prepare a presentation in
 - [ ] Routing either between pages || single scrolling page (using anchors or a some type of navigation)
 - [ ] Work || Project section with project descriptions and links to Github
 - [ ] Working links to Github projects or deployed projects
-- [ ] About section. (Summary can be taken from your story mining)
+- [ ] About section. (Summary can be pulled from your TYS)
 - [ ] Contact section with form for visitors to send email
 - [ ] At least (1) CSS animation existing anywhere on the site
 - [ ] Github API specific data - Object structure below
