@@ -178,7 +178,6 @@ header h1 {
     padding: 56px 28px;
   }
 }
-
 @media (min-width: 1100px) {
   #about {
     min-height: 50vh; 
@@ -307,6 +306,7 @@ header h1 {
     height: 220px;
     border-radius: 24px;
   }
+  }
   
 @media (prefers-reduced-motion: reduce) {
   .site-hero::before,
@@ -349,6 +349,12 @@ header h1 {
   transition: transform 160ms var(--ease), background 160ms var(--ease), box-shadow 160ms var(--ease);
   text-decoration: none;
 }
+
+/* Allow buttons to shrink and wrap gracefully on small screens */
+.btn {
+  min-width: 0; /* allow flex items to shrink below their content width */
+}
+.btn .icon { max-width: 1.2em; }
 
 .btn:focus { outline: 3px solid var(--btn-primary-focus); outline-offset: 4px; }
 .btn:hover { transform: translateY(-2px); }
@@ -427,6 +433,38 @@ section#contact {
     justify-content: center;
     min-height: 50vh;
     padding: 0 20px;
+}
+
+/* Resume action buttons layout */
+.resume-container {
+  width: 100%;
+}
+.resume-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+.resume-actions .btn {
+  flex: 1 1 auto;
+  min-width: 160px;
+}
+
+section#contact .btn {
+  max-width: 360px;
+}
+
+@media (max-width: 640px) {
+  footer {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 12px;
+    align-items: center;
+  }
+  footer p { margin: 0; }
+  footer .footer-link { padding: 6px; }
 }
 
 section#resume {
