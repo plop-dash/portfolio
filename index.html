@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Kim</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="initial-loader" role="status" aria-live="polite">
+      <div class="loader" aria-hidden="true"></div>
+      <div class="loader-label">Loading…</div>
+    </div>
+    <div id="home" class="main">
+      <nav>
+        <div class="nav-left">
+            <a href="#home">Michael</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="nav-right">
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <!-- Theme toggle (sun / moon) -->
+        <!-- <button
+        id="theme-toggle"
+        aria-label="Toggle color theme"
+        title="Toggle color theme"
+        aria-pressed="false"
+        ></button>
+        </div> -->
+      </nav>
+
+      <header class="site-hero">
+        <div class="header-left">
+          <h1 class="reveal">Michael Kim</h1>
+          <p class="header-sub reveal">
+            Developer &amp; MS Computer Science student — working to build
+            meaningful web experiences.
+          </p>
+        </div>
+
+        <div class="header-portrait reveal" aria-hidden="true">
+          <img
+            src="229894524.png"
+            alt="Portrait of Michael Kim"
+            loading="lazy"
+            width="320"
+            height="320"
+          />
+        </div>
+      </header>
+
+      <section id="about">
+        <h2 class="reveal">About Me</h2>
+        <p class="reveal">
+          Hello! I'm Michael Kim, a developer with a background in computer
+          science and a love for coding. I have a bachelors in computer science
+          from the University of Utah and am currently pursuing my masters in
+          computer science at Georgia Tech while enrolled in the FastTrack
+          Program.
+        </p>
+        <p>
+          I've always been fascinated by technology and its potential to solve
+          real-world problems since I was a child. Thinking about how games and
+          web applications work and the logic behind them sparked my interest in
+          programming. This passion led me to study computer science. Seeing my
+          growth and progress from creating simple games like asteroids and
+          snake to more complex full stack applications has been incredibly
+          rewarding.
+        </p>
+        <p>
+          Since then, I've been continously honing my skills and expanding my
+          knowledge in various programming languages and frameworks through
+          online courses, personal projects, and collaborative work. I enjoy
+          working on projects that challenge me to learn new skills and
+          technologies. When I'm not coding, I can usually be found playing
+          video games and hiking with family and friends.
+        </p>
+        <p>
+          Recently, I've been working with the following technologies:
+          <ul>
+              <li>Spring</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>Java</li>
+              <li>Angular</li>
+            </ul>
+        </p>
+      </section>
+
+      <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project reveal">
+            <div class="project-media">
+              <img
+                src="RESTAPI.png"
+                srcset="
+                  RESTAPI.png  320w,
+                  RESTAPI.png  640w,
+                  RESTAPI.png 1024w
+                "
+                sizes="(max-width:600px) 100vw, (max-width:1100px) 48vw, 33vw"
+                alt="Project thumbnail — Twitter Rest API"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Twitter Rest API</h3>
+              <div class="project-meta">Spring Boot · JPA · PostgreSQL</div>
+              <p>
+                A RESTful API built with Spring Boot, JPA, and PostgreSQL that
+                allows users to interact with data you would see from a site
+                like Twitter, including fetching tweets, posting updates, and
+                managing user profiles.
+              </p>
+            </div>
+            <a class='btn secondary' href="https://github.com/plop-dash/social-media-RESTAPI" target="_blank">View on GitHub →</a>
+          </div>
+
+          <div class="project reveal">
+            <div class="project-media">
+              <img
+                src="quizzler.png"
+                srcset="
+                  quizzler.png  320w,
+                  quizzler.png  640w,
+                  quizzler.png 1024w
+                "
+                sizes="(max-width:600px) 100vw, (max-width:1100px) 48vw, 33vw"
+                alt="Project thumbnail — Quizler App"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Quizler App</h3>
+              <div class="project-meta">JavaScript · Vorpal · Inquirer</div>
+              <p>
+                A quiz application built with JavaScript using Vorpal and
+                Inquirer that allows users to create and take quizzes on various
+                topics.
+              </p>
+            </div>
+            <a class='btn secondary' href="https://github.com/plop-dash/quizzler-cli" target="_blank">View on GitHub →</a>
+          </div>
+
+          <div class="project reveal">
+            <div class="project-media">
+              <img
+                src="dev-duel.png"
+                srcset="
+                  dev-duel.png  320w,
+                  dev-duel.png  640w,
+                  dev-duel.png 1024w
+                "
+                sizes="(max-width:600px) 100vw, (max-width:1100px) 48vw, 33vw"
+                alt="Project thumbnail — Portfolio Website"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Dev Duel</h3>
+              <div class="project-meta">Angular · Node · JavaScript</div>
+              <p>A site for developers on GitHub to duel against each other based on various criteria pulled from the GitHub API.</p>
+            </div>
+            <a class='btn secondary' href="https://github.com/fasttrackd-student-work/angular-dev-duel-plop-dash?tab=readme-ov-file" target="_blank">View on GitHub →</a>
+          </div>
+
+          <div class="project reveal">
+            <div class="project-media">
+              <img
+                src="pokemon_tournament.png"
+                srcset="
+                  pokemon_tournament.png  320w,
+                  pokemon_tournament.png  640w,
+                  pokemon_tournament.png 1024w
+                "
+                sizes="(max-width:600px) 100vw, (max-width:1100px) 48vw, 33vw"
+                alt="Project thumbnail — Pokemon Battle Simulator"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Pokemon Battle Simulator</h3>
+              <div class="project-meta">Spring Boot · Spring Security · Docker</div>
+              <p>
+                A battle simulator for Pokemon built with Spring Boot, Spring
+                Security, Spring MVC, PostgreSQL, Docker, and Thymeleaf that
+                allows authenticated users to simulate battles between their
+                custom Pokemon and create rulesets for battles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="reveal">
+        <h2>Resume</h2>
+        <p>View or download my resume below.</p>
+
+        <div class="resume-container">
+          <div class="resume-actions">
+            <a
+              class="btn secondary"
+              href="resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img class="icon" src="icons/icon-open.svg" alt="">Open in new tab</a>
+            >
+            <a
+              class="btn danger"
+              href="resume.pdf"
+              download="Michael_Kim_Resume.pdf"
+              ><img class="icon" src="icons/icon-download.svg" alt="">Download PDF</a>
+            >
+            <a
+              id="resume-toggle"
+              class="btn primary"
+              aria-pressed="false"
+              aria-controls="resume-embed"
+            ><img class="icon" src="icons/icon-file.svg" alt="">Show Resume</a>
+            
+          </div>
+
+          <div id="resume-embed" class="hidden">
+            <object
+              data="resume.pdf"
+              type="application/pdf"
+              width="100%"
+              height="700"
+            >
+              <p style="padding: 1rem; color: #4b5563">
+                Your browser doesn't support displaying PDFs inline. You can
+                <a href="resume.pdf">download the resume here</a>.
+              </p>
+            </object>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="reveal">
+          I am always looking for new opportunities and am open to connecting with others whether it's for collaboration, networking, or just a friendly chat.
+        </p>
+  <a class="btn primary" href="mailto:kim.michaeljay@gmail.com"><img class="icon" src="icons/icon-mail.svg" alt="">Email Me</a>
+      </section>
+
+      <footer>
+  <p>Built & Developed by Michael Kim.</p>
+  <a href="" class="footer-link github"><img class="icon" src="icons/icon-github.svg" alt=""></a>
+  <a href="" class="footer-link linkedin"><img class="icon" src="icons/icon-linkedin.svg" alt=""></a>
+      </footer>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
